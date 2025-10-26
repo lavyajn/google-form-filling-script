@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Screenshots
+confirmation.png
+debug_screenshots/
+
+# Sensitive
+*.env
