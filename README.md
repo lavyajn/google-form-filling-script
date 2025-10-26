@@ -1,5 +1,3 @@
-# google-form-filling-script
-
 # Google Form Automation - Python (Selenium) Assignment
 
 This project automates the process of filling a Google Form using Selenium WebDriver and sends the submission via email using Flask.
@@ -71,7 +69,7 @@ Make sure Google Chrome is installed on your system. The script will automatical
 
 ### Form Automation (`fill_form.py`)
 
-Update the `YOUR_DATA` dictionary with your information:
+Update the `YOUR_DATA` dictionary with your information from config.py which has to be created expilicitly:
 
 ```python
 YOUR_DATA = {

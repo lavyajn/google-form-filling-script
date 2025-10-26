@@ -10,17 +10,14 @@ load_dotenv()
 SENDER_EMAIL = "lavyajain.dev@gmail.com"
 SENDER_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
 
-RECIPIENT_EMAIL = "lavyajain.dev@gmail.com"
-CC_EMAIL = "lavyahasnolyf2628@gmail.com"
-
-#RECIPIENT_EMAIL = "tech@themedius.ai"
-#CC_EMAIL = "hr@themedius.ai"
+RECIPIENT_EMAIL = "your.recipient@gmail.com"
+CC_EMAIL = "your.cc@gmail.com"
 
 # details to be sent
 NAME = "Lavya Jain"
 GITHUB_REPO = "https://github.com/lavyajn/google-form-filling-script"
-RESUME_LINK = "https://your-resume-link-here.com"
-PAST_WORK = "https://github.com/lavyajn"
+RESUME_LINK = "https://drive.google.com/file/d/1AgDvl3d-KQE-O4zjgxoqRDCJzlfM_kr7/view?usp=drive_link"
+PAST_WORK = "https://expense-tracker-frontend-five-iota.vercel.app/login"
 AVAILABILITY = "I am only available to work part time from (5pm - 9pm) as i am currently a 5th semster engineering student"
 
 # screenshot of file path
