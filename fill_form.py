@@ -1,4 +1,5 @@
 import time
+from config import YOUR_DATA
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -6,18 +7,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-# configuration for the data
-YOUR_DATA = {
-    "Full Name": "Lavya Jain",
-    "Contact Number": "8218476656",
-    "Email Id": "lavyajain.dev@gmail.com",
-    "Full Address": "Nehru Nagar, Pimpri-Chinchwad, Maharashtra",
-    "Pincode": "411018",
-    "Date of Birth": "05/30/2004",
-    "Gender": "Male"
-}
+# configuration for the data to be imported from config.py
 
-FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdqYgND0WW6z1c0yeTRy-8SAKtgsI8ra3STzIqrTfQk5LmaeQ/viewform"
+FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdUCd3UWQ3VOgeg0ZzNeT-xzNawU8AJ7Xidml-w1vhfBcvBWQ/viewform"
 SCREENSHOT_FOLDER = "debug_screenshots"
 CONFIRMATION_SCREENSHOT = "confirmation.png"
 

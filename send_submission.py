@@ -1,33 +1,34 @@
 import smtplib
 import os
+from dotenv import load_dotenv 
 from email.message import EmailMessage
 from flask import Flask
 
-# Email Configuration
-SENDER_EMAIL = "lavyajain.dev@gmail.com"
-SENDER_PASSWORD = "ancz jsxy pexz ptlv"
+load_dotenv()
 
+# email configuration
+SENDER_EMAIL = "lavyajain.dev@gmail.com"
+SENDER_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
 
 RECIPIENT_EMAIL = "lavyajain.dev@gmail.com"
 CC_EMAIL = "lavyahasnolyf2628@gmail.com"
-# Recipient Emails
+
 #RECIPIENT_EMAIL = "tech@themedius.ai"
 #CC_EMAIL = "hr@themedius.ai"
 
-# Your Details
+# details to be sent
 NAME = "Lavya Jain"
 GITHUB_REPO = "https://github.com/lavyajn/google-form-filling-script"
 RESUME_LINK = "https://your-resume-link-here.com"
 PAST_WORK = "https://github.com/lavyajn"
 AVAILABILITY = "I am only available to work part time from (5pm - 9pm) as i am currently a 5th semster engineering student"
 
-# Screenshot file path
+# screenshot of file path
 SCREENSHOT_FILE = "confirmation.png"
 
-# Initialize Flask app
+# initializing Flask App
 app = Flask(__name__)
 
-# Email body content
 EMAIL_BODY = f"""Dear Hiring Team,
 
 Please find my submission for the Python (Selenium) Assignment.

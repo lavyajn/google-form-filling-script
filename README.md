@@ -260,6 +260,6 @@ This project is created for the Medius Technologies assignment.
 - Python community
 
 ---
-ancz jsxy pexz ptlv
+
 
 
